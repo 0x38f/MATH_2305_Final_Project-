@@ -1,22 +1,6 @@
-import numpy as np
+from functions.reading_writing_functions import get_graph
 
-def get_graph():
-    edgelist = np.loadtxt(f'data/G1.txt', dtype = int)
-    G = ([],{})
-
-    for x in edgelist:
-        
-        if x[0] not in G[0]:
-            G[0].append(x[0])
-    
-        if x[1] not in G[0]:
-            G[0].append(x[1])
-
-        G[1][(x[0], x[1])] = x[2]
-        
-    return G
-
-graph = get_graph()
+graph = get_graph("G1.txt")
 
 print(f'V(G) = {graph[0]}')
 print('')
