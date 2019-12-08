@@ -7,10 +7,11 @@ print(f'Graph vertices = {graph[0]}')                   ##Prints vertices
 print('')
 print(f'Graph edges and weights = {graph[1]}')          ##Prints edges and weights
 
-vertex = ([0],[])
-vertexEdges = incident_edges(graph,vertex)
+vertex = 0
+
+vertexEdges = incident_edges(graph, vertex)
 
 print('')
-print(f'{vertex[0]} is a member of edges {vertexEdges}')
+print(f'{vertex} is a member of edges {vertexEdges}')
 
 
