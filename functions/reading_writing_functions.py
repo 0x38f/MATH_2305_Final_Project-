@@ -2,7 +2,7 @@ import numpy as np
 
 ##Function takes the graph from data and returns a tuple of its Vertices and the edges with thier weight values
 def get_graph(textfile):
-    edgelist = np.loadtxt(f'data/{textfile}', dtype = int)
+    edgelist = np.loadtxt(f'data/{textfile}.txt', dtype = int)  ##inputs file from data 
     graph = ([],{})
 
     for vertex in edgelist:                                     ##iterates throught the list
