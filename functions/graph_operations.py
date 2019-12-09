@@ -3,9 +3,8 @@ def init_tuple(x):
     return ([x],[])
 
 ##finds all edges a vertex is a member of
-def incident_edges(graph, x):
+def incident_edges(graph, vertexTuple):
 
-    vertexTuple = init_tuple(x)
     edges = []                                                                                  ##initializes list for edges
 
     for edge in graph[1]:                                                                       ##iterates through all graph edges
