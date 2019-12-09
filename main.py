@@ -1,7 +1,12 @@
 from functions.reading_writing_functions import get_graph
+from algorithms.prims_algorithm import prims_mst_alg
 
-graph = get_graph("G1.txt")                             ##reads graph with filename and writes the edges and vertices with their weights
+dataChoice = input("Choose a graph from Data: ")
+vertex = int(input("Choose a starting Vertex: "))
 
-print(f'Graph vertices = {graph[0]}')                   ##Prints vertices
+graph = get_graph(dataChoice)
+minimumSpanningTree = prims_mst_alg(graph, vertex)
+
 print('')
-print(f'Graph edges and weights = {graph[1]}')          ##Prints edges and weights
+print(f'The minimum spanning tree for graph {dataChoice} is: {minimumSpanningTree[0]}')
+print(f'The cost of the tree is {minimumSpanningTree[1]}')
