@@ -27,6 +27,6 @@ def prims_mst_alg(graph,x):
                 vertex[0].append(edgePoint)                         ##adds vertex to the vertex list
 
     for mstEdge in vertex[1]:                                       ##iterates through MST edges
-            mstSum += edge_cost(graph , mstEdge)                    ##sums the cost of each edge
+         mstSum += edge_cost(graph , mstEdge)                       ##sums the cost of each edge
 
     return vertex[1], mstSum                                        ##returns tuple containing minimum spanning tree and cost sum
