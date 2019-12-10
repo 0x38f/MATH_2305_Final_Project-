@@ -125,3 +125,5 @@ dmypy.json
 
 #Others to ignore
 .vscode
+.DS_Store
+.gitignore
